@@ -86,7 +86,7 @@ myWorld.add_set_listener( set_listener )
 @app.route('/')
 def hello():
     '''Return something coherent here.. perhaps redirect to /static/index.html '''
-    return flask.redirect("/static/index.html", 301)
+    return flask.redirect("/static/index.html", 302)
 
 def read_ws(ws,client):
     '''A greenlet function that reads from the websocket and updates the world'''
